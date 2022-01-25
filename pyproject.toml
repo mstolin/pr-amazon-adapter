@@ -11,6 +11,19 @@ lxml = "^4.7.1"
 requests = "^2.27.1"
 
 [tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+coverage = "^6.3"
+pytest-cov = "^3.0.0"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["hypermodern_python"]
+
+[tool.coverage.report]
+show_missing = true
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
